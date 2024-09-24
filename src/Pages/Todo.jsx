@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import toast from 'react-hot-toast'
 import { IoMdCloseCircle } from 'react-icons/io'
-import { MdCheckCircle, MdClose, MdOutlineDeleteOutline } from 'react-icons/md'
+import { MdCheckCircle, MdOutlineDeleteOutline } from 'react-icons/md'
 import { v4 as createId } from 'uuid'
 
 const Todo = () => {
