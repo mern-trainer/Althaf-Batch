@@ -1,612 +1,610 @@
 export const products = [
     {
-      "id": 1,
-      "title": "Essence Mascara Lash Princess",
-      "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
-      "category": "beauty",
-      "price": 9.99,
-      "discountPercentage": 7.17,
-      "rating": 4.94,
-      "stock": 5,
+      "id": 101,
+      "title": "Apple AirPods Max Silver",
+      "description": "The Apple AirPods Max in Silver are premium over-ear headphones with high-fidelity audio, adaptive EQ, and active noise cancellation. Experience immersive sound in style.",
+      "category": "mobile-accessories",
+      "price": 549.99,
+      "discountPercentage": 11.7,
+      "rating": 3.11,
+      "stock": 7,
       "tags": [
-        "beauty",
-        "mascara"
+        "electronics",
+        "over-ear headphones"
       ],
-      "brand": "Essence",
-      "sku": "RCH45Q1A",
-      "weight": 2,
+      "brand": "Apple",
+      "sku": "HPK82VDE",
+      "weight": 4,
       "dimensions": {
-        "width": 23.17,
-        "height": 14.43,
-        "depth": 28.01
+        "width": 7.73,
+        "height": 18.36,
+        "depth": 17.87
       },
-      "warrantyInformation": "1 month warranty",
+      "warrantyInformation": "3 months warranty",
       "shippingInformation": "Ships in 1 month",
-      "availabilityStatus": "Low Stock",
-      "reviews": [
-        {
-          "rating": 2,
-          "comment": "Very unhappy with my purchase!",
-          "date": "2024-05-23T08:56:21.618Z",
-          "reviewerName": "John Doe",
-          "reviewerEmail": "john.doe@x.dummyjson.com"
-        },
-        {
-          "rating": 2,
-          "comment": "Not as described!",
-          "date": "2024-05-23T08:56:21.618Z",
-          "reviewerName": "Nolan Gonzalez",
-          "reviewerEmail": "nolan.gonzalez@x.dummyjson.com"
-        },
-        {
-          "rating": 5,
-          "comment": "Very satisfied!",
-          "date": "2024-05-23T08:56:21.618Z",
-          "reviewerName": "Scarlett Wright",
-          "reviewerEmail": "scarlett.wright@x.dummyjson.com"
-        }
-      ],
-      "returnPolicy": "30 days return policy",
-      "minimumOrderQuantity": 24,
-      "meta": {
-        "createdAt": "2024-05-23T08:56:21.618Z",
-        "updatedAt": "2024-05-23T08:56:21.618Z",
-        "barcode": "9164035109868",
-        "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
-      },
-      "images": [
-        "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png"
-      ],
-      "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png"
-    },
-    {
-      "id": 2,
-      "title": "Eyeshadow Palette with Mirror",
-      "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
-      "category": "beauty",
-      "price": 19.99,
-      "discountPercentage": 5.5,
-      "rating": 3.28,
-      "stock": 44,
-      "tags": [
-        "beauty",
-        "eyeshadow"
-      ],
-      "brand": "Glamour Beauty",
-      "sku": "MVCFH27F",
-      "weight": 3,
-      "dimensions": {
-        "width": 12.42,
-        "height": 8.63,
-        "depth": 29.13
-      },
-      "warrantyInformation": "1 year warranty",
-      "shippingInformation": "Ships in 2 weeks",
       "availabilityStatus": "In Stock",
       "reviews": [
-        {
-          "rating": 4,
-          "comment": "Very satisfied!",
-          "date": "2024-05-23T08:56:21.618Z",
-          "reviewerName": "Liam Garcia",
-          "reviewerEmail": "liam.garcia@x.dummyjson.com"
-        },
         {
           "rating": 1,
-          "comment": "Very disappointed!",
-          "date": "2024-05-23T08:56:21.618Z",
-          "reviewerName": "Nora Russell",
-          "reviewerEmail": "nora.russell@x.dummyjson.com"
-        },
-        {
-          "rating": 5,
-          "comment": "Highly impressed!",
-          "date": "2024-05-23T08:56:21.618Z",
-          "reviewerName": "Elena Baker",
-          "reviewerEmail": "elena.baker@x.dummyjson.com"
-        }
-      ],
-      "returnPolicy": "30 days return policy",
-      "minimumOrderQuantity": 32,
-      "meta": {
-        "createdAt": "2024-05-23T08:56:21.618Z",
-        "updatedAt": "2024-05-23T08:56:21.618Z",
-        "barcode": "2817839095220",
-        "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
-      },
-      "images": [
-        "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png"
-      ],
-      "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/thumbnail.png"
-    },
-    {
-      "id": 3,
-      "title": "Powder Canister",
-      "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
-      "category": "beauty",
-      "price": 14.99,
-      "discountPercentage": 18.14,
-      "rating": 3.82,
-      "stock": 59,
-      "tags": [
-        "beauty",
-        "face powder"
-      ],
-      "brand": "Velvet Touch",
-      "sku": "9EN8WLT2",
-      "weight": 8,
-      "dimensions": {
-        "width": 24.16,
-        "height": 10.7,
-        "depth": 11.07
-      },
-      "warrantyInformation": "2 year warranty",
-      "shippingInformation": "Ships in 1-2 business days",
-      "availabilityStatus": "In Stock",
-      "reviews": [
-        {
-          "rating": 5,
-          "comment": "Very happy with my purchase!",
-          "date": "2024-05-23T08:56:21.618Z",
-          "reviewerName": "Ethan Thompson",
-          "reviewerEmail": "ethan.thompson@x.dummyjson.com"
-        },
-        {
-          "rating": 4,
-          "comment": "Great value for money!",
-          "date": "2024-05-23T08:56:21.618Z",
-          "reviewerName": "Levi Hicks",
-          "reviewerEmail": "levi.hicks@x.dummyjson.com"
-        },
-        {
-          "rating": 5,
-          "comment": "Highly impressed!",
-          "date": "2024-05-23T08:56:21.618Z",
-          "reviewerName": "Hazel Gardner",
-          "reviewerEmail": "hazel.gardner@x.dummyjson.com"
-        }
-      ],
-      "returnPolicy": "60 days return policy",
-      "minimumOrderQuantity": 25,
-      "meta": {
-        "createdAt": "2024-05-23T08:56:21.618Z",
-        "updatedAt": "2024-05-23T08:56:21.618Z",
-        "barcode": "0516267971277",
-        "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
-      },
-      "images": [
-        "https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/1.png"
-      ],
-      "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/thumbnail.png"
-    },
-    {
-      "id": 4,
-      "title": "Red Lipstick",
-      "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
-      "category": "beauty",
-      "price": 12.99,
-      "discountPercentage": 19.03,
-      "rating": 2.51,
-      "stock": 68,
-      "tags": [
-        "beauty",
-        "lipstick"
-      ],
-      "brand": "Chic Cosmetics",
-      "sku": "O5IF1NTA",
-      "weight": 5,
-      "dimensions": {
-        "width": 14.37,
-        "height": 13.94,
-        "depth": 14.6
-      },
-      "warrantyInformation": "Lifetime warranty",
-      "shippingInformation": "Ships in 2 weeks",
-      "availabilityStatus": "In Stock",
-      "reviews": [
-        {
-          "rating": 5,
-          "comment": "Great product!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Leo Rivera",
-          "reviewerEmail": "leo.rivera@x.dummyjson.com"
-        },
-        {
-          "rating": 4,
-          "comment": "Very pleased!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Oscar Powers",
-          "reviewerEmail": "oscar.powers@x.dummyjson.com"
-        },
-        {
-          "rating": 5,
-          "comment": "Very pleased!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Carter Rivera",
-          "reviewerEmail": "carter.rivera@x.dummyjson.com"
-        }
-      ],
-      "returnPolicy": "90 days return policy",
-      "minimumOrderQuantity": 6,
-      "meta": {
-        "createdAt": "2024-05-23T08:56:21.619Z",
-        "updatedAt": "2024-05-23T08:56:21.619Z",
-        "barcode": "9444582199406",
-        "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
-      },
-      "images": [
-        "https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/1.png"
-      ],
-      "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/thumbnail.png"
-    },
-    {
-      "id": 5,
-      "title": "Red Nail Polish",
-      "description": "The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.",
-      "category": "beauty",
-      "price": 8.99,
-      "discountPercentage": 2.46,
-      "rating": 3.91,
-      "stock": 71,
-      "tags": [
-        "beauty",
-        "nail polish"
-      ],
-      "brand": "Nail Couture",
-      "sku": "YUIIIP4W",
-      "weight": 9,
-      "dimensions": {
-        "width": 8.11,
-        "height": 10.89,
-        "depth": 29.06
-      },
-      "warrantyInformation": "1 year warranty",
-      "shippingInformation": "Ships in 1 week",
-      "availabilityStatus": "In Stock",
-      "reviews": [
-        {
-          "rating": 5,
-          "comment": "Very pleased!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Leo Rivera",
-          "reviewerEmail": "leo.rivera@x.dummyjson.com"
-        },
-        {
-          "rating": 5,
-          "comment": "Great product!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Evan Reed",
-          "reviewerEmail": "evan.reed@x.dummyjson.com"
-        },
-        {
-          "rating": 4,
-          "comment": "Highly recommended!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Evelyn Sanchez",
-          "reviewerEmail": "evelyn.sanchez@x.dummyjson.com"
-        }
-      ],
-      "returnPolicy": "No return policy",
-      "minimumOrderQuantity": 46,
-      "meta": {
-        "createdAt": "2024-05-23T08:56:21.619Z",
-        "updatedAt": "2024-05-23T08:56:21.619Z",
-        "barcode": "3212847902461",
-        "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
-      },
-      "images": [
-        "https://cdn.dummyjson.com/products/images/beauty/Red%20Nail%20Polish/1.png"
-      ],
-      "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Red%20Nail%20Polish/thumbnail.png"
-    },
-    {
-      "id": 6,
-      "title": "Calvin Klein CK One",
-      "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
-      "category": "fragrances",
-      "price": 49.99,
-      "discountPercentage": 0.32,
-      "rating": 4.85,
-      "stock": 17,
-      "tags": [
-        "fragrances",
-        "perfumes"
-      ],
-      "brand": "Calvin Klein",
-      "sku": "DZM2JQZE",
-      "weight": 5,
-      "dimensions": {
-        "width": 11.53,
-        "height": 14.44,
-        "depth": 6.81
-      },
-      "warrantyInformation": "5 year warranty",
-      "shippingInformation": "Ships overnight",
-      "availabilityStatus": "In Stock",
-      "reviews": [
-        {
-          "rating": 5,
-          "comment": "Great value for money!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Sophia Brown",
-          "reviewerEmail": "sophia.brown@x.dummyjson.com"
+          "comment": "Waste of money!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Harper Kelly",
+          "reviewerEmail": "harper.kelly@x.dummyjson.com"
         },
         {
           "rating": 3,
-          "comment": "Very disappointed!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Madison Collins",
-          "reviewerEmail": "madison.collins@x.dummyjson.com"
+          "comment": "Not as described!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Abigail Rivera",
+          "reviewerEmail": "abigail.rivera@x.dummyjson.com"
         },
         {
-          "rating": 1,
-          "comment": "Poor quality!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Maya Reed",
-          "reviewerEmail": "maya.reed@x.dummyjson.com"
+          "rating": 5,
+          "comment": "Excellent quality!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Nora Russell",
+          "reviewerEmail": "nora.russell@x.dummyjson.com"
         }
       ],
-      "returnPolicy": "No return policy",
-      "minimumOrderQuantity": 20,
+      "returnPolicy": "90 days return policy",
+      "minimumOrderQuantity": 2,
       "meta": {
-        "createdAt": "2024-05-23T08:56:21.619Z",
-        "updatedAt": "2024-05-23T08:56:21.619Z",
-        "barcode": "2210136215089",
+        "createdAt": "2024-05-23T08:56:21.624Z",
+        "updatedAt": "2024-05-23T08:56:21.624Z",
+        "barcode": "9261269777547",
         "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
       },
       "images": [
-        "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/1.png",
-        "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/2.png",
-        "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/3.png"
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20AirPods%20Max%20Silver/1.png"
       ],
-      "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/thumbnail.png"
+      "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20AirPods%20Max%20Silver/thumbnail.png"
     },
     {
-      "id": 7,
-      "title": "Chanel Coco Noir Eau De",
-      "description": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
-      "category": "fragrances",
-      "price": 129.99,
-      "discountPercentage": 18.64,
-      "rating": 2.76,
-      "stock": 41,
+      "id": 102,
+      "title": "Apple Airpower Wireless Charger",
+      "description": "The Apple AirPower Wireless Charger provides a convenient way to charge your compatible Apple devices wirelessly. Simply place your devices on the charging mat for effortless charging.",
+      "category": "mobile-accessories",
+      "price": 79.99,
+      "discountPercentage": 6.54,
+      "rating": 4.51,
+      "stock": 78,
       "tags": [
-        "fragrances",
-        "perfumes"
+        "electronics",
+        "wireless chargers"
       ],
-      "brand": "Chanel",
-      "sku": "K71HBCGS",
-      "weight": 4,
+      "brand": "Apple",
+      "sku": "CBIU3PMZ",
+      "weight": 3,
       "dimensions": {
-        "width": 21.27,
-        "height": 28,
-        "depth": 11.89
+        "width": 25.51,
+        "height": 20.44,
+        "depth": 26.48
       },
-      "warrantyInformation": "1 week warranty",
+      "warrantyInformation": "Lifetime warranty",
       "shippingInformation": "Ships in 1 month",
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 1,
-          "comment": "Disappointing product!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Lincoln Kelly",
-          "reviewerEmail": "lincoln.kelly@x.dummyjson.com"
+          "rating": 5,
+          "comment": "Awesome product!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Bella Gonzalez",
+          "reviewerEmail": "bella.gonzalez@x.dummyjson.com"
         },
         {
           "rating": 4,
-          "comment": "Great product!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Lincoln Kelly",
-          "reviewerEmail": "lincoln.kelly@x.dummyjson.com"
+          "comment": "Very pleased!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Eli Bennett",
+          "reviewerEmail": "eli.bennett@x.dummyjson.com"
         },
-        {
-          "rating": 4,
-          "comment": "Excellent quality!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Lucas Allen",
-          "reviewerEmail": "lucas.allen@x.dummyjson.com"
-        }
-      ],
-      "returnPolicy": "60 days return policy",
-      "minimumOrderQuantity": 5,
-      "meta": {
-        "createdAt": "2024-05-23T08:56:21.619Z",
-        "updatedAt": "2024-05-23T08:56:21.619Z",
-        "barcode": "1435582999795",
-        "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
-      },
-      "images": [
-        "https://cdn.dummyjson.com/products/images/fragrances/Chanel%20Coco%20Noir%20Eau%20De/1.png",
-        "https://cdn.dummyjson.com/products/images/fragrances/Chanel%20Coco%20Noir%20Eau%20De/2.png",
-        "https://cdn.dummyjson.com/products/images/fragrances/Chanel%20Coco%20Noir%20Eau%20De/3.png"
-      ],
-      "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Chanel%20Coco%20Noir%20Eau%20De/thumbnail.png"
-    },
-    {
-      "id": 8,
-      "title": "Dior J'adore",
-      "description": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
-      "category": "fragrances",
-      "price": 89.99,
-      "discountPercentage": 17.44,
-      "rating": 3.31,
-      "stock": 91,
-      "tags": [
-        "fragrances",
-        "perfumes"
-      ],
-      "brand": "Dior",
-      "sku": "E70NB03B",
-      "weight": 10,
-      "dimensions": {
-        "width": 21.51,
-        "height": 7,
-        "depth": 26.51
-      },
-      "warrantyInformation": "Lifetime warranty",
-      "shippingInformation": "Ships in 2 weeks",
-      "availabilityStatus": "In Stock",
-      "reviews": [
         {
           "rating": 5,
-          "comment": "Fast shipping!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Zoe Nicholson",
-          "reviewerEmail": "zoe.nicholson@x.dummyjson.com"
-        },
-        {
-          "rating": 4,
-          "comment": "Excellent quality!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Addison Wright",
-          "reviewerEmail": "addison.wright@x.dummyjson.com"
-        },
-        {
-          "rating": 4,
-          "comment": "Would buy again!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Clara Berry",
-          "reviewerEmail": "clara.berry@x.dummyjson.com"
+          "comment": "Very pleased!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Cameron Perez",
+          "reviewerEmail": "cameron.perez@x.dummyjson.com"
         }
       ],
       "returnPolicy": "7 days return policy",
       "minimumOrderQuantity": 8,
       "meta": {
-        "createdAt": "2024-05-23T08:56:21.619Z",
-        "updatedAt": "2024-05-23T08:56:21.619Z",
-        "barcode": "0887083199279",
+        "createdAt": "2024-05-23T08:56:21.624Z",
+        "updatedAt": "2024-05-23T08:56:21.624Z",
+        "barcode": "6981066059882",
         "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
       },
       "images": [
-        "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/1.png",
-        "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/2.png",
-        "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/3.png"
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpower%20Wireless%20Charger/1.png"
       ],
-      "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/thumbnail.png"
+      "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpower%20Wireless%20Charger/thumbnail.png"
     },
     {
-      "id": 9,
-      "title": "Dolce Shine Eau de",
-      "description": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
-      "category": "fragrances",
-      "price": 69.99,
-      "discountPercentage": 11.47,
-      "rating": 2.68,
-      "stock": 3,
+      "id": 103,
+      "title": "Apple HomePod Mini Cosmic Grey",
+      "description": "The Apple HomePod Mini in Cosmic Grey is a compact smart speaker that delivers impressive audio and integrates seamlessly with the Apple ecosystem for a smart home experience.",
+      "category": "mobile-accessories",
+      "price": 99.99,
+      "discountPercentage": 3.7,
+      "rating": 4.51,
+      "stock": 65,
       "tags": [
-        "fragrances",
-        "perfumes"
+        "electronics",
+        "smart speakers"
       ],
-      "brand": "Dolce & Gabbana",
-      "sku": "1NBFK980",
-      "weight": 5,
+      "brand": "Apple",
+      "sku": "LDHQAT4B",
+      "weight": 2,
       "dimensions": {
-        "width": 17,
-        "height": 24.57,
-        "depth": 13.3
+        "width": 21.14,
+        "height": 12.62,
+        "depth": 20.13
       },
-      "warrantyInformation": "5 year warranty",
-      "shippingInformation": "Ships in 1-2 business days",
-      "availabilityStatus": "Low Stock",
+      "warrantyInformation": "1 month warranty",
+      "shippingInformation": "Ships overnight",
+      "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 4,
-          "comment": "Very satisfied!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Xavier Wright",
-          "reviewerEmail": "xavier.wright@x.dummyjson.com"
+          "rating": 3,
+          "comment": "Very dissatisfied!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Evelyn Gonzalez",
+          "reviewerEmail": "evelyn.gonzalez@x.dummyjson.com"
         },
         {
           "rating": 1,
-          "comment": "Poor quality!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Mila Hernandez",
-          "reviewerEmail": "mila.hernandez@x.dummyjson.com"
+          "comment": "Very unhappy with my purchase!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Mateo Perez",
+          "reviewerEmail": "mateo.perez@x.dummyjson.com"
         },
         {
-          "rating": 5,
-          "comment": "Very happy with my purchase!",
-          "date": "2024-05-23T08:56:21.619Z",
-          "reviewerName": "Sophia Brown",
-          "reviewerEmail": "sophia.brown@x.dummyjson.com"
+          "rating": 4,
+          "comment": "Would buy again!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Nora Mills",
+          "reviewerEmail": "nora.mills@x.dummyjson.com"
         }
       ],
-      "returnPolicy": "30 days return policy",
-      "minimumOrderQuantity": 9,
+      "returnPolicy": "7 days return policy",
+      "minimumOrderQuantity": 8,
       "meta": {
-        "createdAt": "2024-05-23T08:56:21.619Z",
-        "updatedAt": "2024-05-23T08:56:21.619Z",
-        "barcode": "1939383392674",
+        "createdAt": "2024-05-23T08:56:21.624Z",
+        "updatedAt": "2024-05-23T08:56:21.624Z",
+        "barcode": "3484370545271",
         "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
       },
       "images": [
-        "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/1.png",
-        "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/2.png",
-        "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/3.png"
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20HomePod%20Mini%20Cosmic%20Grey/1.png"
       ],
-      "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/thumbnail.png"
+      "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20HomePod%20Mini%20Cosmic%20Grey/thumbnail.png"
     },
     {
-      "id": 10,
-      "title": "Gucci Bloom Eau de",
-      "description": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
-      "category": "fragrances",
-      "price": 79.99,
-      "discountPercentage": 8.9,
-      "rating": 2.69,
-      "stock": 93,
+      "id": 104,
+      "title": "Apple iPhone Charger",
+      "description": "The Apple iPhone Charger is a high-quality charger designed for fast and efficient charging of your iPhone. Ensure your device stays powered up and ready to go.",
+      "category": "mobile-accessories",
+      "price": 19.99,
+      "discountPercentage": 1.01,
+      "rating": 3.03,
+      "stock": 4,
       "tags": [
-        "fragrances",
-        "perfumes"
+        "electronics",
+        "chargers"
       ],
-      "brand": "Gucci",
-      "sku": "FFKZ6HOF",
-      "weight": 10,
+      "brand": "Apple",
+      "sku": "YAA6EHI7",
+      "weight": 5,
       "dimensions": {
-        "width": 22.28,
-        "height": 17.81,
-        "depth": 27.18
+        "width": 28.77,
+        "height": 25.05,
+        "depth": 29.55
       },
-      "warrantyInformation": "No warranty",
-      "shippingInformation": "Ships in 2 weeks",
+      "warrantyInformation": "2 year warranty",
+      "shippingInformation": "Ships in 1 week",
+      "availabilityStatus": "Low Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Very satisfied!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Emily Johnson",
+          "reviewerEmail": "emily.johnson@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Very pleased!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Charlotte Lopez",
+          "reviewerEmail": "charlotte.lopez@x.dummyjson.com"
+        },
+        {
+          "rating": 5,
+          "comment": "Highly recommended!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Cameron Perez",
+          "reviewerEmail": "cameron.perez@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "60 days return policy",
+      "minimumOrderQuantity": 43,
+      "meta": {
+        "createdAt": "2024-05-23T08:56:21.624Z",
+        "updatedAt": "2024-05-23T08:56:21.624Z",
+        "barcode": "9483427398580",
+        "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20iPhone%20Charger/1.png",
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20iPhone%20Charger/2.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20iPhone%20Charger/thumbnail.png"
+    },
+    {
+      "id": 105,
+      "title": "Apple MagSafe Battery Pack",
+      "description": "The Apple MagSafe Battery Pack is a portable and convenient way to add extra battery life to your MagSafe-compatible iPhone. Attach it magnetically for a secure connection.",
+      "category": "mobile-accessories",
+      "price": 99.99,
+      "discountPercentage": 10.27,
+      "rating": 2.61,
+      "stock": 80,
+      "tags": [
+        "electronics",
+        "power banks"
+      ],
+      "brand": "Apple",
+      "sku": "XNFJURL7",
+      "weight": 6,
+      "dimensions": {
+        "width": 21.61,
+        "height": 7.98,
+        "depth": 9.32
+      },
+      "warrantyInformation": "3 year warranty",
+      "shippingInformation": "Ships in 3-5 business days",
       "availabilityStatus": "In Stock",
       "reviews": [
         {
           "rating": 5,
-          "comment": "Great value for money!",
-          "date": "2024-05-23T08:56:21.620Z",
-          "reviewerName": "Aria Parker",
-          "reviewerEmail": "aria.parker@x.dummyjson.com"
+          "comment": "Very pleased!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Hazel Gardner",
+          "reviewerEmail": "hazel.gardner@x.dummyjson.com"
         },
         {
-          "rating": 4,
-          "comment": "Excellent quality!",
-          "date": "2024-05-23T08:56:21.620Z",
-          "reviewerName": "Natalie Harris",
-          "reviewerEmail": "natalie.harris@x.dummyjson.com"
+          "rating": 5,
+          "comment": "Very satisfied!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Aurora Rodriguez",
+          "reviewerEmail": "aurora.rodriguez@x.dummyjson.com"
+        },
+        {
+          "rating": 5,
+          "comment": "Very pleased!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Victoria McDonald",
+          "reviewerEmail": "victoria.mcdonald@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 4,
+      "meta": {
+        "createdAt": "2024-05-23T08:56:21.624Z",
+        "updatedAt": "2024-05-23T08:56:21.624Z",
+        "barcode": "1850091228580",
+        "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20MagSafe%20Battery%20Pack/1.png",
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20MagSafe%20Battery%20Pack/2.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20MagSafe%20Battery%20Pack/thumbnail.png"
+    },
+    {
+      "id": 106,
+      "title": "Apple Watch Series 4 Gold",
+      "description": "The Apple Watch Series 4 in Gold is a stylish and advanced smartwatch with features like heart rate monitoring, fitness tracking, and a beautiful Retina display.",
+      "category": "mobile-accessories",
+      "price": 349.99,
+      "discountPercentage": 5.14,
+      "rating": 4.42,
+      "stock": 68,
+      "tags": [
+        "electronics",
+        "smartwatches"
+      ],
+      "brand": "Apple",
+      "sku": "ZNXPOEPT",
+      "weight": 6,
+      "dimensions": {
+        "width": 8.96,
+        "height": 28.26,
+        "depth": 26.46
+      },
+      "warrantyInformation": "6 months warranty",
+      "shippingInformation": "Ships in 1-2 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3,
+          "comment": "Would not buy again!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Ellie Stewart",
+          "reviewerEmail": "ellie.stewart@x.dummyjson.com"
+        },
+        {
+          "rating": 1,
+          "comment": "Poor quality!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Grayson Coleman",
+          "reviewerEmail": "grayson.coleman@x.dummyjson.com"
         },
         {
           "rating": 4,
           "comment": "Fast shipping!",
-          "date": "2024-05-23T08:56:21.620Z",
-          "reviewerName": "Ava Harris",
-          "reviewerEmail": "ava.harris@x.dummyjson.com"
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Alice Smith",
+          "reviewerEmail": "alice.smith@x.dummyjson.com"
         }
       ],
-      "returnPolicy": "No return policy",
-      "minimumOrderQuantity": 10,
+      "returnPolicy": "60 days return policy",
+      "minimumOrderQuantity": 2,
       "meta": {
-        "createdAt": "2024-05-23T08:56:21.620Z",
-        "updatedAt": "2024-05-23T08:56:21.620Z",
-        "barcode": "8232190382069",
+        "createdAt": "2024-05-23T08:56:21.624Z",
+        "updatedAt": "2024-05-23T08:56:21.624Z",
+        "barcode": "4492482209885",
         "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
       },
       "images": [
-        "https://cdn.dummyjson.com/products/images/fragrances/Gucci%20Bloom%20Eau%20de/1.png",
-        "https://cdn.dummyjson.com/products/images/fragrances/Gucci%20Bloom%20Eau%20de/2.png",
-        "https://cdn.dummyjson.com/products/images/fragrances/Gucci%20Bloom%20Eau%20de/3.png"
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Watch%20Series%204%20Gold/1.png",
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Watch%20Series%204%20Gold/2.png",
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Watch%20Series%204%20Gold/3.png"
       ],
-      "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Gucci%20Bloom%20Eau%20de/thumbnail.png"
+      "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Watch%20Series%204%20Gold/thumbnail.png"
+    },
+    {
+      "id": 107,
+      "title": "Beats Flex Wireless Earphones",
+      "description": "The Beats Flex Wireless Earphones offer a comfortable and versatile audio experience. With magnetic earbuds and up to 12 hours of battery life, they are ideal for everyday use.",
+      "category": "mobile-accessories",
+      "price": 49.99,
+      "discountPercentage": 8.27,
+      "rating": 4.17,
+      "stock": 49,
+      "tags": [
+        "electronics",
+        "wireless earphones"
+      ],
+      "brand": "Beats",
+      "sku": "7N15J2UK",
+      "weight": 6,
+      "dimensions": {
+        "width": 23.49,
+        "height": 15.22,
+        "depth": 20.05
+      },
+      "warrantyInformation": "1 week warranty",
+      "shippingInformation": "Ships overnight",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Very satisfied!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Hannah Robinson",
+          "reviewerEmail": "hannah.robinson@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Awesome product!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Grace Perry",
+          "reviewerEmail": "grace.perry@x.dummyjson.com"
+        },
+        {
+          "rating": 5,
+          "comment": "Very satisfied!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Grayson Coleman",
+          "reviewerEmail": "grayson.coleman@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "7 days return policy",
+      "minimumOrderQuantity": 19,
+      "meta": {
+        "createdAt": "2024-05-23T08:56:21.624Z",
+        "updatedAt": "2024-05-23T08:56:21.624Z",
+        "barcode": "4068884711976",
+        "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Beats%20Flex%20Wireless%20Earphones/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Beats%20Flex%20Wireless%20Earphones/thumbnail.png"
+    },
+    {
+      "id": 108,
+      "title": "iPhone 12 Silicone Case with MagSafe Plum",
+      "description": "The iPhone 12 Silicone Case with MagSafe in Plum is a stylish and protective case designed for the iPhone 12. It features MagSafe technology for easy attachment of accessories.",
+      "category": "mobile-accessories",
+      "price": 29.99,
+      "discountPercentage": 14.35,
+      "rating": 4.41,
+      "stock": 51,
+      "tags": [
+        "electronics",
+        "phone accessories"
+      ],
+      "brand": "Apple",
+      "sku": "3UHE8VLA",
+      "weight": 5,
+      "dimensions": {
+        "width": 6.32,
+        "height": 23.37,
+        "depth": 21.62
+      },
+      "warrantyInformation": "1 year warranty",
+      "shippingInformation": "Ships in 1 month",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 1,
+          "comment": "Very disappointed!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Isaac Lawrence",
+          "reviewerEmail": "isaac.lawrence@x.dummyjson.com"
+        },
+        {
+          "rating": 1,
+          "comment": "Would not recommend!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Emily Johnson",
+          "reviewerEmail": "emily.johnson@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Highly recommended!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Mateo Bennett",
+          "reviewerEmail": "mateo.bennett@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 19,
+      "meta": {
+        "createdAt": "2024-05-23T08:56:21.624Z",
+        "updatedAt": "2024-05-23T08:56:21.624Z",
+        "barcode": "4106912332105",
+        "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/iPhone%2012%20Silicone%20Case%20with%20MagSafe%20Plum/1.png",
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/iPhone%2012%20Silicone%20Case%20with%20MagSafe%20Plum/2.png",
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/iPhone%2012%20Silicone%20Case%20with%20MagSafe%20Plum/3.png",
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/iPhone%2012%20Silicone%20Case%20with%20MagSafe%20Plum/4.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/iPhone%2012%20Silicone%20Case%20with%20MagSafe%20Plum/thumbnail.png"
+    },
+    {
+      "id": 109,
+      "title": "Monopod",
+      "description": "The Monopod is a versatile camera accessory for stable and adjustable shooting. Perfect for capturing selfies, group photos, and videos with ease.",
+      "category": "mobile-accessories",
+      "price": 19.99,
+      "discountPercentage": 11.62,
+      "rating": 2.99,
+      "stock": 96,
+      "tags": [
+        "electronics",
+        "camera accessories"
+      ],
+      "brand": "TechGear",
+      "sku": "RDEQ0W2L",
+      "weight": 9,
+      "dimensions": {
+        "width": 8.42,
+        "height": 25.12,
+        "depth": 29.9
+      },
+      "warrantyInformation": "1 week warranty",
+      "shippingInformation": "Ships in 1 week",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4,
+          "comment": "Very pleased!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Austin Hudson",
+          "reviewerEmail": "austin.hudson@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Excellent quality!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Austin Hudson",
+          "reviewerEmail": "austin.hudson@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Fast shipping!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Gabriel Mitchell",
+          "reviewerEmail": "gabriel.mitchell@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 10,
+      "meta": {
+        "createdAt": "2024-05-23T08:56:21.624Z",
+        "updatedAt": "2024-05-23T08:56:21.624Z",
+        "barcode": "2270380444574",
+        "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Monopod/1.png",
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Monopod/2.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Monopod/thumbnail.png"
+    },
+    {
+      "id": 110,
+      "title": "Selfie Lamp with iPhone",
+      "description": "The Selfie Lamp with iPhone is a portable and adjustable LED light designed to enhance your selfies and video calls. Attach it to your iPhone for well-lit photos.",
+      "category": "mobile-accessories",
+      "price": 14.99,
+      "discountPercentage": 13.86,
+      "rating": 2.84,
+      "stock": 89,
+      "tags": [
+        "electronics",
+        "selfie accessories"
+      ],
+      "brand": "GadgetMaster",
+      "sku": "2VZ1ZNMO",
+      "weight": 7,
+      "dimensions": {
+        "width": 13.38,
+        "height": 26.33,
+        "depth": 22.71
+      },
+      "warrantyInformation": "1 week warranty",
+      "shippingInformation": "Ships in 1 week",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Very happy with my purchase!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Hannah Howard",
+          "reviewerEmail": "hannah.howard@x.dummyjson.com"
+        },
+        {
+          "rating": 5,
+          "comment": "Excellent quality!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "William Gonzalez",
+          "reviewerEmail": "william.gonzalez@x.dummyjson.com"
+        },
+        {
+          "rating": 3,
+          "comment": "Would not buy again!",
+          "date": "2024-05-23T08:56:21.624Z",
+          "reviewerName": "Amelia Perez",
+          "reviewerEmail": "amelia.perez@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "90 days return policy",
+      "minimumOrderQuantity": 4,
+      "meta": {
+        "createdAt": "2024-05-23T08:56:21.624Z",
+        "updatedAt": "2024-05-23T08:56:21.624Z",
+        "barcode": "6205123036707",
+        "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/products/images/mobile-accessories/Selfie%20Lamp%20with%20iPhone/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Selfie%20Lamp%20with%20iPhone/thumbnail.png"
     }
-]
+  ]

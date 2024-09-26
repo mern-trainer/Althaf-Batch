@@ -54,7 +54,7 @@ const Todo = () => {
                 <button onClick={handleTodo} className="btn btn-secondary w-50 mt-3">Add Todo</button>
             </div>
             <div className="d-flex flex-column align-items-center mt-4 gap-2">
-                <h3>Pending Tasks</h3>
+                <h3>Pending Tasks - ({todoList.filter(t=>!t.completed).length})</h3>
                 {
                     todoList.filter(todo => !todo.completed).map((todo) => {
                         return (
@@ -73,7 +73,7 @@ const Todo = () => {
                         )
                     })
                 }
-                <h3>Completed Tasks</h3>
+                <h3>Completed Tasks - ({todoList.filter(t=>t.completed).length})</h3>
                 {
                     todoList.filter(todo => todo.completed).map((todo) => {
                         return (

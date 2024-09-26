@@ -9,8 +9,8 @@ import A from "./Components/A"
 const App = () => {
     return <Fragment>
         {/* <LandingPage /> */}
-        {/* <Todo /> */}
-        <ShopPage />
+        <Todo />
+        {/* <ShopPage /> */}
         {/* <A /> */}
         <Toaster position="top-right"/>
     </Fragment>
