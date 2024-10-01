@@ -3,12 +3,13 @@ import toast from 'react-hot-toast'
 import { IoMdCloseCircle } from 'react-icons/io'
 import { MdCheckCircle, MdEdit, MdOutlineDeleteOutline } from 'react-icons/md'
 import { v4 as createId } from 'uuid'
+import EditModal from '../Components/EditModal'
 
 const Todo = () => {
 
     const [todoList, setTodoList] = useState([])
     const [todo, setTodo] = useState("")
-    const [currentEditable, setCurrentEditable] = useState("")
+    const [editableTask, setEditableTask] = useState(null)
     const [editTask, setEditTask] = useState("")
 
     const handleTodo = () => {
@@ -50,7 +51,8 @@ const Todo = () => {
     }
 
     const handleEdit = (todo) => {
-        setCurrentEditable(todo.id)
+        // setCurrentEditable(todo.id)
+        setEditableTask(todo)
         setEditTask(todo.task)
     }
 
@@ -59,26 +61,32 @@ const Todo = () => {
             return toast.error("Task is required!")
         } 
         const exist = todoList.find((element) => element.task.toLowerCase() == editTask.toLowerCase())
-        console.log(exist, currentEditable)
-        if (exist && exist.id != currentEditable) {
+        if (exist && exist.id != editableTask.id) {
             return toast.error("Task already exist")
         }
         if (editTask.length < 5) {
             return toast.error("Minimum 5 characters")
         }
         const res = todoList.map(todo => {
-            if (todo.id == currentEditable) {
+            if (todo.id == editableTask.id) {
                 return {...todo, task: editTask, updatedAt: new Date().toLocaleString("en-IN")}
             }
             return todo
         })
         setTodoList(res)
         setEditTask("")
-        setCurrentEditable("")
+        setEditableTask(null)
     }
 
     return (
         <div className="">
+            {editableTask && <EditModal
+                editableTask={editableTask}
+                handleUpdate={handleUpdate}
+                setEditTask={setEditTask}
+                editTask={editTask}
+                setEditableTask={setEditableTask}
+            />}
             <div className="mt-4 d-flex flex-column align-items-center">
                 <input type="text" placeholder="Eg: Develop a web app" name="todo" value={todo} onChange={(event) => setTodo(event.target.value)} className="p-2 w-50 rounded border border-secondary" style={{outline: 0}}/>
                 <button onClick={handleTodo} className="btn btn-secondary w-50 mt-3">Add Todo</button>
@@ -91,16 +99,13 @@ const Todo = () => {
                             <div key={todo.id} className="p-3 bg-dark text-light rounded w-50 d-flex justify-content-between">
                                 <div>
                                     <div>ID: {todo.id}</div>
-                                    <div className="">Task: {currentEditable == todo.id ? <Fragment>
-                                        <input type='text' className='me-1' placeholder='Enter task' onChange={(event) => setEditTask(event.target.value)} value={editTask} />
-                                        <button className='btn btn-sm btn-primary' onClick={handleUpdate}>Update</button>
-                                    </Fragment> : todo.task}</div>
+                                    <div className="">Task: {todo.task}</div>
                                     <div>Status: {todo.completed ? "Completed" : "Pending"}</div>
                                     <div>Updated: {todo.updatedAt}</div>
                                 </div>
                                 <div className="d-flex flex-column gap-3 justify-content-between">
                                     <MdOutlineDeleteOutline size={20} cursor={"pointer"} onClick={() => handleRemove(todo.id)} />
-                                    {currentEditable != todo.id && <MdEdit size={20} cursor={"pointer"} onClick={() => handleEdit(todo)}/>}
+                                    <MdEdit size={20} cursor={"pointer"} onClick={() => handleEdit(todo)}/>
                                     <MdCheckCircle size={20} cursor={"pointer"} onClick={() => handleStatusUpdate(todo.id)} />    
                                 </div>
                             </div>
