@@ -1,12 +1,14 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useContext, useState } from 'react'
 import Navbar from '../Components/Navbar'
 import { products } from '../Constants/Products'
 import ProductList from '../Components/ProductList'
 import Modal from '../Components/Modal'
+import { CartContext } from '../App'
 
 const ShopPage = () => {
 
     const [selectedProduct, setSelectedProduct] = useState(null)
+    const { cartList } = useContext(CartContext)
 
     return (
         <Fragment>
@@ -28,6 +30,20 @@ const ShopPage = () => {
                     setSelectedProduct={setSelectedProduct}
                 />
             }
+            <div className='mt-5'>
+                <h1>CART</h1>
+                <div className="d-flex mt-3 flex-wrap gap-3">
+                    {
+                        cartList.map((product) => {
+                            return <ProductList
+                                product={product}
+                                key={product.id}
+                                cart={true}
+                            />
+                        })
+                    }
+                </div>
+            </div>
         </Fragment>
     )
 }

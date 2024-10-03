@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+// context api => global state management
+
 const LandingPage = () => {
 
     const [counter, setCounter] = useState({ count1: 0, count2: 0 })

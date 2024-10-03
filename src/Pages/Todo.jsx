@@ -1,17 +1,16 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useContext, useState } from 'react'
 import toast from 'react-hot-toast'
 import { IoMdCloseCircle } from 'react-icons/io'
 import { MdCheckCircle, MdEdit, MdOutlineDeleteOutline } from 'react-icons/md'
 import { v4 as createId } from 'uuid'
 import EditModal from '../Components/EditModal'
+import { TodoContext } from '../App'
 
 const Todo = () => {
 
-    const [todoList, setTodoList] = useState([])
+    const {todoList, setTodoList, editableTask, setEditableTask, setEditTask} = useContext(TodoContext)
     const [todo, setTodo] = useState("")
-    const [editableTask, setEditableTask] = useState(null)
-    const [editTask, setEditTask] = useState("")
-
+    
     const handleTodo = () => {
         if (!todo) {
             return toast.error("Task is required!")
@@ -56,37 +55,10 @@ const Todo = () => {
         setEditTask(todo.task)
     }
 
-    const handleUpdate = () => {
-        if (!editTask) {
-            return toast.error("Task is required!")
-        } 
-        const exist = todoList.find((element) => element.task.toLowerCase() == editTask.toLowerCase())
-        if (exist && exist.id != editableTask.id) {
-            return toast.error("Task already exist")
-        }
-        if (editTask.length < 5) {
-            return toast.error("Minimum 5 characters")
-        }
-        const res = todoList.map(todo => {
-            if (todo.id == editableTask.id) {
-                return {...todo, task: editTask, updatedAt: new Date().toLocaleString("en-IN")}
-            }
-            return todo
-        })
-        setTodoList(res)
-        setEditTask("")
-        setEditableTask(null)
-    }
 
     return (
         <div className="">
-            {editableTask && <EditModal
-                editableTask={editableTask}
-                handleUpdate={handleUpdate}
-                setEditTask={setEditTask}
-                editTask={editTask}
-                setEditableTask={setEditableTask}
-            />}
+            {editableTask && <EditModal/>}
             <div className="mt-4 d-flex flex-column align-items-center">
                 <input type="text" placeholder="Eg: Develop a web app" name="todo" value={todo} onChange={(event) => setTodo(event.target.value)} className="p-2 w-50 rounded border border-secondary" style={{outline: 0}}/>
                 <button onClick={handleTodo} className="btn btn-secondary w-50 mt-3">Add Todo</button>
