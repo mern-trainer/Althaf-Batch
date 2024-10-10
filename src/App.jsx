@@ -5,9 +5,10 @@ import toast, { Toaster } from "react-hot-toast"
 import ShopPage from "./Pages/ShopPage"
 import A from "./Components/A"
 import ContextPage from "./Pages/ContextPage"
+import Events from "./Pages/Events"
 
 export const TodoContext = createContext()
-export const CartContext = createContext()
+
 
 const App = () => {
 
@@ -38,15 +39,14 @@ const App = () => {
         setEditableTask(null)
     }
 
-    const [cartList, setCartList] = useState([])
-
     return <TodoContext.Provider value={{todoList, setTodoList, editableTask, setEditableTask, editTask, setEditTask, handleUpdate}}> 
         {/* <LandingPage /> */}
         {/* <Todo /> */}
         {/* <ContextPage /> */}
-        <CartContext.Provider value={{cartList, setCartList}}>
-            <ShopPage />
-        </CartContext.Provider>
+       
+        {/* <ShopPage /> */}
+        <Events />
+       
         {/* <A /> */}
         <Toaster position="top-right"/>
     </TodoContext.Provider>

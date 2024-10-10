@@ -1,10 +1,14 @@
 import React, { useContext } from 'react'
 import { FaHeart, FaShoppingCart } from 'react-icons/fa'
-import { CartContext } from '../App'
+import { CartContext } from '../Providers/CartProvider'
+import { useCart } from '../Hooks'
+// import { CartContext } from '../App'
+
 
 const Navbar = () => {
 
-    const { cartList } = useContext(CartContext)
+    // const { cartList } = useContext(CartContext)
+    const { cartList} = useCart()
 
     return (
         <div className="d-flex justify-content-between border-bottom align-items-center px-3" style={{height: "60px"}}>
