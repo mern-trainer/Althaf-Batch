@@ -8,7 +8,7 @@ const Events = () => {
     // const [counter, setCounter] = useState(0)
     // const [count, setCount] = useState(0)
 
-    const [axis, setAxis] = useState({x: 0, y: 0})
+    const [axis, setAxis] = useState({ x: 0, y: 0 })
 
     const handleMouseMove = (event) => {
         setAxis({x: event.clientX, y: event.clientY})

@@ -6,6 +6,7 @@ import ShopPage from "./Pages/ShopPage"
 import A from "./Components/A"
 import ContextPage from "./Pages/ContextPage"
 import Events from "./Pages/Events"
+import UseEffect from "./Pages/UseEffect"
 
 export const TodoContext = createContext()
 
@@ -45,7 +46,8 @@ const App = () => {
         {/* <ContextPage /> */}
        
         {/* <ShopPage /> */}
-        <Events />
+        {/* <Events /> */}
+        <UseEffect />
        
         {/* <A /> */}
         <Toaster position="top-right"/>
