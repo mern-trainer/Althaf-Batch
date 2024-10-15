@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useState } from 'react'
+import toast from 'react-hot-toast'
 
 const UseEffect = () => {
 
@@ -10,16 +11,20 @@ const UseEffect = () => {
 
     useEffect(() => {
         const getProducts = async () => {
-            const limit = 25
-            const skip = ( currentPage - 1 ) * limit  // => 2 * 25 = 50 
-            const response = await fetch(`https://dummyjson.com/products?limit=${limit}&skip=${skip}`)
-            const result = await response.json()
-            setProducts(result.products)
-            if (totalPages == -1) {
-                const pages = Math.ceil(result.total / limit)
-                setTotalPages(pages)
-                // Math.ceil(5.001) => 6
-                // 101/5 => 5.2 => 6
+            try {
+                const limit = 25
+                const skip = ( currentPage - 1 ) * limit  // => 2 * 25 = 50 
+                const response = await fetch(`https://dummyjson.com/products?limit=${limit}&skip=${skip}`)
+                const result = await response.json()
+                setProducts(result.products)
+                if (totalPages == -1) {
+                    const pages = Math.ceil(result.total / limit)
+                    setTotalPages(pages)
+                    // Math.ceil(5.001) => 6
+                    // 101/5 => 5.2 => 6
+                }
+            } catch (error) {
+                return toast.error("Error happend!")
             }
         }
         getProducts()
