@@ -3,7 +3,14 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { CartProvider } from './Providers/CartProvider.jsx';
+import { TodoProvider } from './Providers/TodoProvider.jsx';
+import { Toaster } from 'react-hot-toast';
 
 const root = createRoot(document.getElementById('root'))
 
-root.render(<CartProvider><App /></CartProvider>)
+root.render(<CartProvider>
+    <TodoProvider>
+        <App />
+        <Toaster position='top-right' />
+    </TodoProvider>
+</CartProvider>)
