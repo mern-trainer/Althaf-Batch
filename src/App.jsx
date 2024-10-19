@@ -1,14 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import UseEffect from "./Pages/UseEffect"
-import SingleView from "./Components/SingleView"
+import Router from "./Routes/Router"
 
 const App = () => {
-    return <BrowserRouter>
-        <Routes>
-            <Route path="/" Component={UseEffect} />
-            <Route path="/single-view/:id" Component={SingleView} />
-        </Routes>
-    </BrowserRouter>
+    return <Router />
 }
 
 export default App

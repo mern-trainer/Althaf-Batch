@@ -1,15 +1,20 @@
 import React, { Fragment, useContext, useState } from 'react'
 import toast from 'react-hot-toast'
-import { IoMdCloseCircle } from 'react-icons/io'
+import { IoMdCloseCircle, IoMdEye } from 'react-icons/io'
 import { MdCheckCircle, MdEdit, MdOutlineDeleteOutline } from 'react-icons/md'
 import { v4 as createId } from 'uuid'
 import EditModal from '../Components/EditModal'
-import { TodoContext } from '../App'
+import { TodoContext } from '../Providers/TodoProvider'
+import { useNavigate } from 'react-router-dom'
 
 const Todo = () => {
 
     const {todoList, setTodoList, editableTask, setEditableTask, setEditTask} = useContext(TodoContext)
     const [todo, setTodo] = useState("")
+
+    // useNavigate =>
+    
+    const navigate = useNavigate()
     
     const handleTodo = () => {
         if (!todo) {
@@ -68,17 +73,16 @@ const Todo = () => {
                 {
                     todoList.filter(todo => !todo.completed).map((todo) => {
                         return (
-                            <div key={todo.id} className="p-3 bg-dark text-light rounded w-50 d-flex justify-content-between">
+                            <div key={todo.id} className="p-3 bg-dark text-light flex-column rounded w-50 d-flex justify-content-between">
                                 <div>
-                                    <div>ID: {todo.id}</div>
                                     <div className="">Task: {todo.task}</div>
                                     <div>Status: {todo.completed ? "Completed" : "Pending"}</div>
-                                    <div>Updated: {todo.updatedAt}</div>
                                 </div>
-                                <div className="d-flex flex-column gap-3 justify-content-between">
+                                <div className="d-flex gap-3 justify-content-end">
                                     <MdOutlineDeleteOutline size={20} cursor={"pointer"} onClick={() => handleRemove(todo.id)} />
-                                    <MdEdit size={20} cursor={"pointer"} onClick={() => handleEdit(todo)}/>
-                                    <MdCheckCircle size={20} cursor={"pointer"} onClick={() => handleStatusUpdate(todo.id)} />    
+                                    <MdEdit size={20} cursor={"pointer"} onClick={() => navigate(`/todo/edit/${todo.id}`)}/>
+                                    <MdCheckCircle size={20} cursor={"pointer"} onClick={() => handleStatusUpdate(todo.id)} /> 
+                                    <IoMdEye size={20} cursor={"pointer"} onClick={() => navigate(`/todo/view/${todo.id}`)}/>
                                 </div>
                             </div>
                         )
