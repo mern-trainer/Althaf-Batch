@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { Fragment, useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
 import { CgShoppingCart } from 'react-icons/cg'
@@ -18,8 +19,7 @@ const UseEffect = () => {
             try {
                 const limit = 25
                 const skip = ( currentPage - 1 ) * limit  // => 2 * 25 = 50 
-                const response = await fetch(`https://dummyjson.com/products?limit=${limit}&skip=${skip}`)
-                const result = await response.json()
+                const { data: result } = await axios.get(`https://dummyjson.com/products?limit=${limit}&skip=${skip}`)
                 const filteredData = result.products.filter((product) => product.title.toLowerCase().includes(searchItem.toLowerCase()))
                 setProducts(filteredData)
                 console.log(filteredData.length)
