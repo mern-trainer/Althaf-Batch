@@ -9,9 +9,10 @@ const Formik = () => {
         initialValues: {
             username: "",
             password: "",
+            confirm_password: ""
         },
-        onSubmit: ({ username, password }) => {
-            console.log(username, password)
+        onSubmit: ({ username, password, confirm_password }) => {
+            console.log(username, password, confirm_password)
         },
         validationSchema: yup.object().shape({
             username: yup.string()
@@ -21,7 +22,11 @@ const Formik = () => {
             password: yup.string()
                 .required("Password is required")
                 .min(8, "Min: 8")
-                .max(16, "Max: 16")
+                .max(16, "Max: 16"),
+            confirm_password: yup.string()
+                .required("Confirm Password is required")
+                .oneOf([yup.ref("password")], "Password doesn't match")
+            
         })
         // validate: ({ username, password }) => {
         //     if (username == "" && password == "") {
@@ -47,6 +52,8 @@ const Formik = () => {
                 <span>{formik.errors.username}</span>
                 <input type="password" name="password" onChange={formik.handleChange} value={formik.values.password} placeholder="Enter password..." className="p-2" />
                 <span>{formik.errors.password}</span>
+                <input type="password" name="confirm_password" onChange={formik.handleChange} value={formik.values.confirm_password} placeholder="Confirm password..." className="p-2" />
+                <span>{formik.errors.confirm_password}</span>
                 <button type="submit" className="btn btn-success w-100 rounded-0 p-2">SignIn</button>
             </form>
         </div>

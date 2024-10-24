@@ -8,6 +8,7 @@ import EditPage from '../Pages/EditPage'
 import NotFound from '../Pages/NotFound'
 import Form from '../Pages/Form'
 import Formik from '../Pages/Formik'
+import Redux from '../Pages/Redux'
 
 const Router = () => {
     return <BrowserRouter>
@@ -16,6 +17,7 @@ const Router = () => {
                 <Route path="" Component={UseEffect} />
                 <Route path="/form" Component={Form} />
                 <Route path="/formik" Component={Formik} />
+                <Route path="/redux" Component={Redux} />
                 <Route path="single-view">
                     <Route path=":id" Component={SingleView} />
                 </Route>
