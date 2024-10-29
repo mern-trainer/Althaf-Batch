@@ -1,15 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// const obj = {
-// counter: {
-//     counter: 0
-// },
-// user: {
-//         name: "sdf",
-//         akd: 23
-//     }
-// }
-
 const counterSlice = createSlice({
     name: "counter",
     initialState: {

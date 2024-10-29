@@ -9,6 +9,7 @@ import NotFound from '../Pages/NotFound'
 import Form from '../Pages/Form'
 import Formik from '../Pages/Formik'
 import Redux from '../Pages/Redux'
+import TodoRedux from '../Pages/TodoRedux'
 
 const Router = () => {
     return <BrowserRouter>
@@ -23,6 +24,7 @@ const Router = () => {
                 </Route>
                 <Route path="todo">
                     <Route path="" Component={Todo} />
+                    <Route path="redux" Component={TodoRedux} />
                     <Route path="view">
                         <Route path=":id" Component={ViewTodo} />
                     </Route>
